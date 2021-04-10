@@ -1,0 +1,18 @@
+#myCard{
+    border-radius: 15px;
+    display: inline-block;
+}
+img{
+    max-height: 50%;
+    max-width: 50%;
+}
+.scrolling-wrapper{
+	overflow-x: auto;
+
+}
+#cardBody{
+    background-color: black;
+}
+li{
+    list-style: none;
+}
