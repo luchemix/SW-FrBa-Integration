@@ -35,7 +35,7 @@ const getState = ({ getStore, getActions, setStore }) => {
 		},
 		actions: {
 			getPeople: async () => {
-				const URL = "https://swapi.dev/api/people/";
+				const URL = "https://3000-teal-alpaca-kt5s9sye.ws-us03.gitpod.io/people";
 				const CONFIG = {
 					method: "GET",
 					headers: {
@@ -45,12 +45,11 @@ const getState = ({ getStore, getActions, setStore }) => {
 				const response = await fetch(URL, CONFIG);
 				const json = await response.json();
 
-				console.log("DATA>>", json);
-				setStore({ people: json.results });
+				setStore({ people: json });
 			},
 
 			getPlanets: async () => {
-				const URL = "https://swapi.dev/api/planets/";
+				const URL = "https://3000-teal-alpaca-kt5s9sye.ws-us03.gitpod.io/planet";
 				const CONFIG = {
 					method: "GET",
 					headers: {
@@ -61,7 +60,7 @@ const getState = ({ getStore, getActions, setStore }) => {
 				const json = await response.json();
 
 				console.log("DATA>>", json);
-				setStore({ planets: json.results });
+				setStore({ planets: json });
 			},
 
 			setFavorites: name => {

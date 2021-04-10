@@ -38,7 +38,6 @@ export const Home = () => {
 
 											<p className="card-text text-light">
 												<ul>
-													<li>Birth Year: {item.birth_year}</li>
 													<li>Height: {item.height}</li>
 													<li>Gender: {item.gender}</li>
 												</ul>
@@ -92,7 +91,7 @@ export const Home = () => {
 
 											<p className="card-text text-light">
 												<ul>
-													<li>Gravity: {item.gravity}</li>
+													<li>Population: {item.population}</li>
 													<li>Climate: {item.climate}</li>
 													<li>Terrain: {item.terrain}</li>
 												</ul>
